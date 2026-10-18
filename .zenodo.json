@@ -4,10 +4,33 @@
   "description": "Code and data for the paper 'Certifying quantum Nash equilibria under hardware noise: a finite-circuit test, T1/T2 stability conditions and an experiment on a superconducting processor'. Contains an exact density-matrix model of the Eisert-Wilkens-Lewenstein Prisoner's Dilemma with noise, the six-circuit quadratic-form certification test, closed-form T1/T2 stability conditions, device-calibrated simulations on six IBM processor snapshots, and the raw counts and analysis of two runs on ibm_kingston (IBM Heron r2, 18 October 2026). Every number, table and figure of the paper can be regenerated.",
   "license": "MIT",
   "creators": [
-    {"name": "Gupta, Raunak Kumar", "affiliation": "K.J. Somaiya School of Engineering"},
-    {"name": "Vasani, Vaibhav Prakash", "affiliation": "K.J. Somaiya School of Engineering"},
-    {"name": "Zaware, Durgesh", "affiliation": "K.J. Somaiya School of Engineering"},
-    {"name": "Pawar, Swapnil", "affiliation": "K.J. Somaiya School of Engineering"}
+    {
+      "name": "Gupta, Raunak Kumar",
+      "affiliation": "K.J. Somaiya School of Engineering",
+      "orcid": "0009-0000-9087-8594"
+    },
+    {
+      "name": "Vasani, Vaibhav Prakash",
+      "affiliation": "K.J. Somaiya School of Engineering",
+      "orcid": "0000-0001-6498-553X"
+    },
+    {
+      "name": "Pawar, Swapnil",
+      "affiliation": "K.J. Somaiya School of Engineering",
+      "orcid": "0009-0001-7174-2162"
+    },
+    {
+      "name": "Sonune, Gopal",
+      "affiliation": "K.J. Somaiya School of Engineering",
+      "orcid": "0009-0008-5367-6377"
+    }
   ],
-  "keywords": ["quantum game theory", "Eisert-Wilkens-Lewenstein", "Nash equilibrium", "decoherence", "error mitigation", "IBM Quantum"]
+  "keywords": [
+    "quantum game theory",
+    "Eisert-Wilkens-Lewenstein",
+    "Nash equilibrium",
+    "decoherence",
+    "error mitigation",
+    "IBM Quantum"
+  ]
 }
