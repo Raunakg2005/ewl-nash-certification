@@ -1,0 +1,13 @@
+{
+  "title": "ewl-nash-certification: certifying quantum Nash equilibria of the EWL game under hardware noise (code, data and IBM Quantum hardware results)",
+  "upload_type": "software",
+  "description": "Code and data for the paper 'Certifying quantum Nash equilibria under hardware noise: a finite-circuit test, T1/T2 stability conditions and an experiment on a superconducting processor'. Contains an exact density-matrix model of the Eisert-Wilkens-Lewenstein Prisoner's Dilemma with noise, the six-circuit quadratic-form certification test, closed-form T1/T2 stability conditions, device-calibrated simulations on six IBM processor snapshots, and the raw counts and analysis of two runs on ibm_kingston (IBM Heron r2, 18 October 2026). Every number, table and figure of the paper can be regenerated.",
+  "license": "MIT",
+  "creators": [
+    {"name": "Gupta, Raunak Kumar", "affiliation": "K.J. Somaiya School of Engineering"},
+    {"name": "Vasani, Vaibhav Prakash", "affiliation": "K.J. Somaiya School of Engineering"},
+    {"name": "Zaware, Durgesh", "affiliation": "K.J. Somaiya School of Engineering"},
+    {"name": "Pawar, Swapnil", "affiliation": "K.J. Somaiya School of Engineering"}
+  ],
+  "keywords": ["quantum game theory", "Eisert-Wilkens-Lewenstein", "Nash equilibrium", "decoherence", "error mitigation", "IBM Quantum"]
+}
