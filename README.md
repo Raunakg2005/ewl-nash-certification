@@ -1,5 +1,7 @@
 # ewl-nash-certification
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23447741.svg)](https://doi.org/10.5281/zenodo.23447741)
+
 Code and data for **"Certifying quantum Nash equilibria under hardware noise: a finite-circuit test, T1/T2
 stability conditions and an experiment on a superconducting processor"** (R. K. Gupta, V. P. Vasani,
 D. Zaware, S. Pawar; manuscript under preparation).

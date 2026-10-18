@@ -4,6 +4,7 @@ title: "ewl-nash-certification: certifying quantum Nash equilibria of the EWL ga
 type: software
 license: MIT
 repository-code: "https://github.com/Raunakg2005/ewl-nash-certification"
+doi: "10.5281/zenodo.23447741"
 date-released: 2026-10-18
 authors:
   - given-names: "Raunak Kumar"
