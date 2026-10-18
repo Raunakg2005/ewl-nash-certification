@@ -21,11 +21,19 @@ authors:
     email: "swapnil.cp@somaiya.edu"
     orcid: "https://orcid.org/0009-0001-7174-2162"
     affiliation: "K.J. Somaiya School of Engineering"
+  - given-names: "Vivek Kishor"
+    family-names: "Vasani"
+    email: "vivekvasani93@gmail.com"
+    affiliation: "Salesforce, San Francisco, California, USA"
   - given-names: "Gopal"
     family-names: "Sonune"
     email: "gopal.s@somaiya.edu"
     orcid: "https://orcid.org/0009-0008-5367-6377"
     affiliation: "K.J. Somaiya School of Engineering"
+  - given-names: "Sathishkumar"
+    family-names: "Veerappampalayam Easwaramoorthy"
+    orcid: "https://orcid.org/0000-0002-8271-2022"
+    affiliation: "Sunway University, Malaysia"
 keywords:
   - quantum game theory
   - Eisert-Wilkens-Lewenstein

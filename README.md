@@ -4,7 +4,7 @@
 
 Code and data for **"Certifying quantum Nash equilibria under hardware noise: a finite-circuit test, T1/T2
 stability conditions and an experiment on a superconducting processor"** (R. K. Gupta, V. P. Vasani,
-S. Pawar, G. Sonune; manuscript under preparation).
+S. Pawar, V. K. Vasani, G. Sonune, S. Veerappampalayam Easwaramoorthy; manuscript under preparation).
 
 The repository regenerates every number, table and figure of the paper from scratch, and contains the raw
 counts of the experiment on IBM Quantum hardware.
