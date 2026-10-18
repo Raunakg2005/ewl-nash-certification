@@ -1,0 +1,2 @@
+coherent_exp {'chi2_per_dof': np.float64(1.739), 'dof': 919, 'detuning_kHz': [-4.504, -13.507], 'T2star_us': [93.659, 86.341], 'r': np.float64(0.0139), 'tc_model_fit_us': np.float64(12.2796)}
+decoherence_only {'chi2_per_dof': np.float64(51.5636), 'dof': 921, 'T2star_us': [56.622, 7.299], 'r': np.float64(0.0134), 'tc_decoherence_fit_us': 12.8531}

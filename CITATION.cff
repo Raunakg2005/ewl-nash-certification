@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "ewl-nash-certification: certifying quantum Nash equilibria of the EWL game under hardware noise"
+type: software
+license: MIT
+repository-code: "https://github.com/Raunakg2005/ewl-nash-certification"
+date-released: 2026-10-18
+authors:
+  - given-names: "Raunak Kumar"
+    family-names: "Gupta"
+    affiliation: "K.J. Somaiya School of Engineering"
+  - given-names: "Vaibhav Prakash"
+    family-names: "Vasani"
+    affiliation: "K.J. Somaiya School of Engineering"
+  - given-names: "Durgesh"
+    family-names: "Zaware"
+    affiliation: "K.J. Somaiya School of Engineering"
+  - given-names: "Swapnil"
+    family-names: "Pawar"
+    affiliation: "K.J. Somaiya School of Engineering"
+keywords:
+  - quantum game theory
+  - Eisert-Wilkens-Lewenstein
+  - Nash equilibrium
+  - decoherence
+  - error mitigation
+  - IBM Quantum

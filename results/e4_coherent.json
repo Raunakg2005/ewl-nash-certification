@@ -1,0 +1,83 @@
+{
+ "tol": 0.05,
+ "rows": [
+  {
+   "s": 0.02,
+   "draws": 4000,
+   "frac_eps_gt_tol": 0.0,
+   "false_certification_vertex": 0.0,
+   "false_cert_given_violation": 0.0,
+   "median_underestimate": 9.501283574264718e-05,
+   "p95_underestimate": 0.0005833924881645686,
+   "median_offdiag": 0.023339254466509196,
+   "n_violating_players": 0,
+   "q_component_min": null,
+   "q_component_median": null
+  },
+  {
+   "s": 0.05,
+   "draws": 4000,
+   "frac_eps_gt_tol": 0.0,
+   "false_certification_vertex": 0.0,
+   "false_cert_given_violation": 0.0,
+   "median_underestimate": 0.0006191819102727703,
+   "p95_underestimate": 0.0037509456916167065,
+   "median_offdiag": 0.05739817070708275,
+   "n_violating_players": 0,
+   "q_component_min": null,
+   "q_component_median": null
+  },
+  {
+   "s": 0.1,
+   "draws": 4000,
+   "frac_eps_gt_tol": 0.0,
+   "false_certification_vertex": 0.0,
+   "false_cert_given_violation": 0.0,
+   "median_underestimate": 0.0024280838349677314,
+   "p95_underestimate": 0.015228994478665134,
+   "median_offdiag": 0.11547219490737481,
+   "n_violating_players": 0,
+   "q_component_min": null,
+   "q_component_median": null
+  },
+  {
+   "s": 0.2,
+   "draws": 4000,
+   "frac_eps_gt_tol": 0.07975,
+   "false_certification_vertex": 0.07975,
+   "false_cert_given_violation": 1.0,
+   "median_underestimate": 0.00956101232689921,
+   "p95_underestimate": 0.05995664308532493,
+   "median_offdiag": 0.22888309737846846,
+   "n_violating_players": 353,
+   "q_component_min": 0.9735949262735283,
+   "q_component_median": 0.9868266045167271
+  },
+  {
+   "s": 0.3,
+   "draws": 4000,
+   "frac_eps_gt_tol": 0.2875,
+   "false_certification_vertex": 0.2875,
+   "false_cert_given_violation": 1.0,
+   "median_underestimate": 0.02197279300281707,
+   "p95_underestimate": 0.13698996872592414,
+   "median_offdiag": 0.33907798831254055,
+   "n_violating_players": 1432,
+   "q_component_min": 0.9349815183413426,
+   "q_component_median": 0.9827248892649417
+  },
+  {
+   "s": 0.5,
+   "draws": 4000,
+   "frac_eps_gt_tol": 0.5595,
+   "false_certification_vertex": 0.5595,
+   "false_cert_given_violation": 1.0,
+   "median_underestimate": 0.06702486732986856,
+   "p95_underestimate": 0.37281938289637995,
+   "median_offdiag": 0.5306917395187286,
+   "n_violating_players": 3081,
+   "q_component_min": 0.786207778843802,
+   "q_component_median": 0.9697759970055001
+  }
+ ]
+}

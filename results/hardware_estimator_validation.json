@@ -1,0 +1,11 @@
+{
+ "reps": 200,
+ "boot": 300,
+ "shots": 6000,
+ "tc_exact_us": 111.62923499762026,
+ "tc_interp_noiseless_us": 111.64952603721441,
+ "mean_estimate_us": 111.44026697956492,
+ "sd_estimate_us": 2.6941924230010614,
+ "coverage_exact": 0.965,
+ "coverage_interp": 0.965
+}

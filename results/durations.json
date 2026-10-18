@@ -1,0 +1,20 @@
+{
+ "fake_torino:short": 4.32e-07,
+ "fake_torino:typical": 4.32e-07,
+ "fake_torino:long": 4.32e-07,
+ "fake_fez:short": 4.5600000000000006e-07,
+ "fake_fez:typical": 4.5600000000000006e-07,
+ "fake_fez:long": 4.5600000000000006e-07,
+ "fake_marrakesh:short": 4.52e-07,
+ "fake_marrakesh:typical": 4.52e-07,
+ "fake_marrakesh:long": 5.000000000000001e-07,
+ "fake_brisbane:short": 2.9400000000000002e-06,
+ "fake_brisbane:typical": 2.9400000000000002e-06,
+ "fake_brisbane:long": 2.9400000000000002e-06,
+ "fake_sherbrooke:short": 2.4177777777777775e-06,
+ "fake_sherbrooke:typical": 2.4177777777777775e-06,
+ "fake_sherbrooke:long": 2.4177777777777775e-06,
+ "fake_kyiv:short": 2.581333333333333e-06,
+ "fake_kyiv:typical": 2.496e-06,
+ "fake_kyiv:long": 2.581333333333333e-06
+}

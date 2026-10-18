@@ -1,0 +1,3 @@
+coherent_exp {'chi2_per_dof': np.float64(2.3799), 'dof': 391, 'detuning_kHz': [-15.636, -5.212], 'T2star_us': [132.087, 66.231], 'r': np.float64(0.0152), 'tc_model_fit_us': np.float64(10.6479)}
+coherent_gauss {'chi2_per_dof': np.float64(3.3781), 'dof': 391, 'detuning_kHz': [-10.309, -10.309], 'T2star_us': [98.795, 52.912], 'r': np.float64(0.0153), 'tc_model_fit_us': np.float64(10.9998)}
+decoherence_only {'chi2_per_dof': np.float64(10.5706), 'dof': 393, 'T2star_us': [137.819, 26.443], 'r': np.float64(0.0152), 'tc_decoherence_fit_us': 46.0317}

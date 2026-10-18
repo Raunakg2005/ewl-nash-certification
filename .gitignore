@@ -1,0 +1,20 @@
+# secrets
+.env
+# LaTeX build products
+*.aux
+*.log
+*.blg
+*.out
+*.synctex.gz
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+# large/regenerable previews
+figures/fig_hardware_dryrun.*
+# manuscript (not public yet)
+paper/
+submission/
+Certifying_Quantum_Nash_Equilibria_manuscript.pdf
+# private notes for the authors
+AUTHORS_NOTES.md

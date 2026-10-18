@@ -1,0 +1,6 @@
+using credentials from .env
+backend ibm_kingston; pair (16, 23); T1 [305, 280] us; T2 [335, 74] us; predicted tau_c 158.9 us
+273 circuits x 1500 shots; estimated QPU time ~3.5 min
+device-model prediction: tau_c ~ 158.9 us
+submitted job dba6521gv2cc73e6dtd0 - saved metadata; waiting for the result ...
+done; counts saved to D:\E\quantum papers\paper 1\redo\results\hardware_job_20261018_113856.json

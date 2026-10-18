@@ -1,0 +1,10 @@
+# versions used for all results in this repository (Python 3.12.10)
+numpy==2.4.1
+scipy==1.16.3
+sympy==1.13.1
+matplotlib==3.10.8
+qiskit==2.1.2
+qiskit-aer==0.17.2
+qiskit-ibm-runtime==0.41.1
+psutil
+pytest
