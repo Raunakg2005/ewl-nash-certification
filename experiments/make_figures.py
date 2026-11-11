@@ -18,9 +18,12 @@ BLUE, ORANGE, AQUA, YELLOW, MAGENTA, GREEN, VIOLET, RED = (
     "#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300", "#6250d6", "#e34948")
 INK, INK2, GRID = "#0b0b0b", "#52514e", "#d9d8d4"
 plt.rcParams.update({
-    "font.family": "serif", "font.serif": ["DejaVu Serif"], "mathtext.fontset": "dejavuserif",
-    "font.size": 9, "axes.labelsize": 9, "axes.titlesize": 9, "legend.fontsize": 8,
-    "xtick.labelsize": 8, "ytick.labelsize": 8, "axes.edgecolor": INK2, "axes.labelcolor": INK,
+    # IOP: Times/Helvetica/Courier/Symbol only; text 8-12 pt at final size (figures are drawn at 6.3 in = text width)
+    "font.family": "serif", "font.serif": ["Times New Roman"], "mathtext.fontset": "custom",
+    "mathtext.rm": "Times New Roman", "mathtext.it": "Times New Roman:italic", "mathtext.bf": "Times New Roman:bold",
+    "mathtext.fallback": "stix", "pdf.fonttype": 42,
+    "font.size": 9.5, "axes.labelsize": 9.5, "axes.titlesize": 9.5, "legend.fontsize": 8.5,
+    "xtick.labelsize": 8.5, "ytick.labelsize": 8.5, "axes.edgecolor": INK2, "axes.labelcolor": INK,
     "xtick.color": INK2, "ytick.color": INK2, "axes.grid": True, "grid.color": GRID, "grid.linewidth": 0.6,
     "axes.spines.top": False, "axes.spines.right": False, "lines.linewidth": 1.6, "lines.markersize": 5,
     "legend.frameon": False, "savefig.dpi": 300, "figure.dpi": 150})
@@ -73,21 +76,21 @@ def save(fig, name):
 
 # ------------------------------------------------------------------ Fig. 1 theory
 def fig_theory():
-    fig, axs = plt.subplots(1, 2, figsize=(6.8, 3.5), constrained_layout=True)
+    fig, axs = plt.subplots(1, 2, figsize=(6.3, 3.5), constrained_layout=True)
     ax = axs[0]
     g = np.linspace(0, 1, 401)
     c_pre = np.sqrt(((1 - g) ** 2 + g ** 2) / 7)
     c_post = (1 - g) / np.sqrt(7)
     c_max = np.sqrt(1 - g)
     ax.fill_between(g, c_pre, c_max, where=c_max >= c_pre, color="#cde2fb", lw=0, label="NE (noise on entangled state)")
-    ax.plot(g, c_max, color=INK2, lw=1.0, ls=":", label=r"physical limit $c=\sqrt{1-g}$")
+    ax.plot(g, c_max, color=INK2, lw=1.0, ls=":", label=r"physical limit $c=(1-g)^{1/2}$")
     ax.plot(g, c_pre, color=BLUE, label=r"boundary, entangled state")
     ax.plot(g, c_post, color=ORANGE, ls="--", label=r"boundary, after moves")
     ax.set_xlabel(r"relaxed population $g$ (both qubits)")
     ax.set_ylabel(r"remaining coherence $c$ (both qubits)")
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1.02)
-    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.2), ncol=2, fontsize=7, columnspacing=1.0)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.2), ncol=2, fontsize=8, columnspacing=1.0)
     panel(ax, "a")
     ax = axs[1]
     t = np.linspace(0, 3, 600)                 # in units of T1
@@ -109,7 +112,7 @@ def fig_theory():
 # ------------------------------------------------------------------ Fig. E1
 def fig_threshold():
     d = C.load("e1_threshold.json")
-    fig, axs = plt.subplots(1, 2, figsize=(6.8, 3.0), constrained_layout=True)
+    fig, axs = plt.subplots(1, 2, figsize=(6.3, 3.0), constrained_layout=True)
     ax = axs[0]
     lo, hi = np.inf, 0
     for p in d["pairs"]:
@@ -128,7 +131,7 @@ def fig_threshold():
     ax.set_ylabel(r"simulated $\tau_c$, device model ($\mu$s)")
     hs = [plt.Line2D([], [], marker=m, color=INK2, ls="none", label=DEV_NAME[k]) for k, m in DEV_MARK.items()]
     hs += [plt.Line2D([], [], marker="o", color=c, ls="none", label=f"{k} pair") for k, c in LAB_COL.items()]
-    ax.legend(handles=hs, loc="upper left", fontsize=6.5, ncol=1, handletextpad=0.3)
+    ax.legend(handles=hs, loc="upper left", fontsize=8, ncol=1, handletextpad=0.3)
     panel(ax, "a")
     ax = axs[1]
     for p in d["pairs"]:
@@ -147,7 +150,7 @@ def fig_threshold():
 def fig_certification():
     d = C.load("e2_certification.json")
     rows = d["rows"]
-    fig, axs = plt.subplots(1, 3, figsize=(7.0, 2.9), constrained_layout=True, sharex=True)
+    fig, axs = plt.subplots(1, 3, figsize=(6.3, 2.9), constrained_layout=True, sharex=True)
     cols = {0.0: BLUE, 0.5: AQUA, 0.9: YELLOW, 1.1: ORANGE, 1.5: RED}
     marks = {0.0: "o", 0.5: "s", 0.9: "D", 1.1: "^", 1.5: "v"}
     for f in d["taus"]:
@@ -160,7 +163,7 @@ def fig_certification():
         ax.xaxis.set_major_locator(matplotlib.ticker.FixedLocator(d["shots"]))
         ax.xaxis.set_major_formatter(matplotlib.ticker.FixedFormatter([f"{n:,}" for n in d["shots"]]))
         ax.xaxis.set_minor_formatter(matplotlib.ticker.NullFormatter())
-        ax.tick_params(axis="x", labelsize=7)
+        ax.tick_params(axis="x", labelsize=8)
         ax.set_xlabel("shots per circuit")
         ax.set_ylabel(title)
         ax.set_ylim(-0.03, 1.03)
@@ -170,7 +173,7 @@ def fig_certification():
                for f in d["taus"]]
     handles += [plt.Line2D([], [], color=INK2, ls="-", label="readout mitigated"),
                 plt.Line2D([], [], color=INK2, ls=":", label="unmitigated")]
-    fig.legend(handles=handles, loc="outside upper center", ncol=7, fontsize=7, columnspacing=0.9, handlelength=1.8)
+    fig.legend(handles=handles, loc="outside upper center", ncol=4, fontsize=8, columnspacing=0.9, handlelength=1.8)
     for ax, l in zip(axs, "abc"):
         panel(ax, l)
     save(fig, "fig_certification")
@@ -179,7 +182,7 @@ def fig_certification():
 # ------------------------------------------------------------------ Fig. E3
 def fig_zne():
     d = C.load("e3_zne.json")
-    fig, axs = plt.subplots(1, 2, figsize=(6.8, 2.8), constrained_layout=True)
+    fig, axs = plt.subplots(1, 2, figsize=(6.3, 2.8), constrained_layout=True)
     styles = {"none": (INK2, "-", "o", "unmitigated"), "linear": (ORANGE, "--", "s", "ZNE linear (1,3)"),
               "quadratic": (BLUE, "-.", "^", "ZNE quadratic (1,3,5)")}
     for method, (col, ls, mk, lab) in styles.items():
@@ -193,7 +196,7 @@ def fig_zne():
     axs[0].set_xlabel(r"idle delay $\tau/\tau_c^{\mathrm{pred}}$")
     axs[0].set_ylabel(r"signed gap $\delta$ (no shot noise)")
     axs[0].set_ylim(-2.15, 0.4)
-    axs[0].legend(loc="upper left", fontsize=7)
+    axs[0].legend(loc="lower right", bbox_to_anchor=(1.0, 0.18), fontsize=8)
     axs[1].set_xlabel(r"idle delay $\tau/\tau_c^{\mathrm{pred}}$")
     axs[1].set_ylabel(r"s.d. of $\hat\delta$, %s shots/circuit" % f"{d['n_tot']:,}")
     axs[1].set_ylim(0, None)
@@ -207,19 +210,19 @@ def fig_coherent():
     d = C.load("e4_coherent.json")
     rows = d["rows"]
     s = [r["s"] for r in rows]
-    fig, axs = plt.subplots(1, 2, figsize=(6.8, 2.6), constrained_layout=True)
+    fig, axs = plt.subplots(1, 2, figsize=(6.3, 2.6), constrained_layout=True)
     axs[0].plot(s, [r["frac_eps_gt_tol"] for r in rows], color=BLUE, marker="o",
                 label="quadratic-form test (6 circuits/player)")
     axs[0].plot(s, [r["frac_eps_gt_tol"] - r["false_certification_vertex"] for r in rows], color=ORANGE, ls="--",
                 marker="s", label="pure-deviation test (C, D only)")
     axs[0].set_xlabel(r"coherent error strength $s$")
     axs[0].set_ylabel(r"violations detected ($\epsilon>0.05$)")
-    axs[0].legend(loc="upper left", fontsize=7)
+    axs[0].legend(loc="upper left", fontsize=8)
     axs[1].plot(s, [r["median_underestimate"] for r in rows], color=BLUE, marker="o", label="median")
     axs[1].plot(s, [r["p95_underestimate"] for r in rows], color=ORANGE, ls="--", marker="s", label="95th percentile")
     axs[1].set_xlabel(r"coherent error strength $s$")
     axs[1].set_ylabel(r"$\epsilon-\epsilon_{\mathrm{pure}}$ (missed incentive)")
-    axs[1].legend(loc="upper left", fontsize=7)
+    axs[1].legend(loc="upper left", fontsize=8)
     for ax, l in zip(axs, "ab"):
         panel(ax, l)
     save(fig, "fig_coherent")

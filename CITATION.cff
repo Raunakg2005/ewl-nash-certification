@@ -1,39 +1,40 @@
-cff-version: 1.2.0
-message: "If you use this code or data, please cite it as below."
-title: "ewl-nash-certification: certifying quantum Nash equilibria of the EWL game under hardware noise"
-type: software
-license: MIT
-repository-code: "https://github.com/Raunakg2005/ewl-nash-certification"
-doi: "10.5281/zenodo.23447741"
-date-released: 2026-10-18
-authors:
-  - given-names: "Raunak Kumar"
-    family-names: "Gupta"
-    orcid: "https://orcid.org/0009-0000-9087-8594"
-    affiliation: "K.J. Somaiya School of Engineering"
-  - given-names: "Vaibhav Prakash"
-    family-names: "Vasani"
-    orcid: "https://orcid.org/0000-0001-6498-553X"
-    affiliation: "K.J. Somaiya School of Engineering"
-  - given-names: "Swapnil"
-    family-names: "Pawar"
-    orcid: "https://orcid.org/0009-0001-7174-2162"
-    affiliation: "K.J. Somaiya School of Engineering"
-  - given-names: "Vivek Kishor"
-    family-names: "Vasani"
-    affiliation: "Salesforce, San Francisco, California, USA"
-  - given-names: "Gopal"
-    family-names: "Sonune"
-    orcid: "https://orcid.org/0009-0008-5367-6377"
-    affiliation: "K.J. Somaiya School of Engineering"
-  - given-names: "Sathishkumar"
-    family-names: "Veerappampalayam Easwaramoorthy"
-    orcid: "https://orcid.org/0000-0002-8271-2022"
-    affiliation: "Sunway University, Malaysia"
-keywords:
-  - quantum game theory
-  - Eisert-Wilkens-Lewenstein
-  - Nash equilibrium
-  - decoherence
-  - error mitigation
-  - IBM Quantum
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "ewl-nash-certification: certifying quantum Nash equilibria of the EWL game under hardware noise"
+type: software
+license: MIT
+repository-code: "https://github.com/Raunakg2005/ewl-nash-certification"
+doi: "10.5281/zenodo.23447741"
+date-released: 2026-10-18
+authors:
+  - given-names: "Raunak Kumar"
+    family-names: "Gupta"
+    orcid: "https://orcid.org/0009-0000-9087-8594"
+    affiliation: "K.J. Somaiya School of Engineering"
+  - given-names: "Vaibhav Prakash"
+    family-names: "Vasani"
+    orcid: "https://orcid.org/0000-0001-6498-553X"
+    affiliation: "K.J. Somaiya School of Engineering"
+  - given-names: "Swapnil"
+    family-names: "Pawar"
+    orcid: "https://orcid.org/0009-0001-7174-2162"
+    affiliation: "K.J. Somaiya School of Engineering"
+  - given-names: "Vivek Kishor"
+    family-names: "Vasani"
+    orcid: "https://orcid.org/0009-0001-5097-0967"
+    affiliation: "Salesforce, San Francisco, California, USA"
+  - given-names: "Gopal"
+    family-names: "Sonune"
+    orcid: "https://orcid.org/0009-0008-5367-6377"
+    affiliation: "K.J. Somaiya School of Engineering"
+  - given-names: "Sathishkumar"
+    family-names: "Veerappampalayam Easwaramoorthy"
+    orcid: "https://orcid.org/0000-0002-8271-2022"
+    affiliation: "Sunway University, Malaysia"
+keywords:
+  - quantum game theory
+  - Eisert-Wilkens-Lewenstein
+  - Nash equilibrium
+  - decoherence
+  - error mitigation
+  - IBM Quantum

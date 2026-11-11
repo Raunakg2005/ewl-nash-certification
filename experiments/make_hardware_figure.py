@@ -14,7 +14,7 @@ if __name__ == "__main__":
     r2 = C.load(RUN2 + ".json")
     fit2 = C.load(RUN2 + "_fit.json")
     vert = [v for v in C.load("hardware_vertex.json") if v["file"].startswith(RUN2)]
-    fig, axs = plt.subplots(1, 2, figsize=(7.0, 3.1), constrained_layout=True)
+    fig, axs = plt.subplots(1, 2, figsize=(6.3, 3.6), constrained_layout=True)
 
     ax = axs[0]
     tc = r2["tc_pred"] * 1e6
@@ -51,5 +51,5 @@ if __name__ == "__main__":
 
     h0, l0 = axs[0].get_legend_handles_labels()
     h1, l1 = axs[1].get_legend_handles_labels()
-    fig.legend(h0 + h1, l0 + l1, loc="outside lower center", ncol=3, fontsize=6.8, columnspacing=1.0, handlelength=1.8)
+    fig.legend(h0 + h1, l0 + l1, loc="outside lower center", ncol=2, fontsize=8, columnspacing=1.0, handlelength=1.8)
     F.save(fig, "fig_hardware")
